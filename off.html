@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>模拟炒股</title>
+    <link rel="icon" href="images/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="images/app.png">
+</head>
+
+<body>
+    <!-- jQuery -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- 关闭跳转到小程序 -->
+    <script>
+        $(function () {
+            localStorage.removeItem('redirect');
+            alert('关闭成功！');
+            setTimeout(function () {
+                location.href = '/';
+            }, 1000);
+        });
+    </script>
+</body>
+
+</html>
